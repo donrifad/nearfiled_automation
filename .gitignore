@@ -11,3 +11,4 @@ build/
 reports/*.txt
 allure_report
 .pytest_cache
+.idea

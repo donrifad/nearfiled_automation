@@ -50,7 +50,7 @@ class CoordinateTests(unittest.TestCase):
                 results.append(self.string_util.get_tupple_result(x, y, 'PASS'))
             else:
                 results.append(self.string_util.get_tupple_result(x, y, 'FAIL'))
-        self.file_reader.write_text_file(results_file_name, results)
+        self.file_reader.write_text_file(results_file_name, results, self.rec_coordinates)
 
         if [status for status in results if "FAIL" in status]:
             self.assertTrue(False, results)
@@ -76,7 +76,7 @@ class CoordinateTests(unittest.TestCase):
                 results.append(self.string_util.get_tupple_result(x, y, 'PASS'))
             else:
                 results.append(self.string_util.get_tupple_result(x, y, 'FAIL'))
-        self.file_reader.write_text_file(results_file_name, results)
+        self.file_reader.write_text_file(results_file_name, results, self.rec_coordinates)
 
         if [status for status in results if "FAIL" in status]:
             self.assertTrue(False, results)
