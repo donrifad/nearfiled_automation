@@ -32,6 +32,12 @@ pip install -r requirements.txt
 ```
 <br> Open the properties.ini and provide your file paths</br>
 
+```commandline
+input_file_path = /data/input/input_file.1630412935.1658413040.txt
+output_file_path = /data/output/ouput_file.1630412935.1658413040.txt
+report_file_path = /reports/
+```
+
 ## Execute the tests ##
 * All test cases resides in the tests folder
 * Navigate to the rood folder and execute the below command
